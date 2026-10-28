@@ -36,3 +36,7 @@ terraform.rc
 .vscode/
 *.swp
 *.swo
+
+
+
+security_groups.tf
