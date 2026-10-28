@@ -1,0 +1,38 @@
+# =======================================================
+# Enterprise Terraform .gitignore
+# Strictly prevents committing state, plugins, or secrets
+# =======================================================
+
+# Local .terraform directories (plugins and provider caches)
+**/.terraform/*
+
+# .tfstate files (Contains sensitive plain-text resource metadata)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files with real secrets (keep .example only)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Override files (local developer overrides)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# OS and Editor metadata
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
